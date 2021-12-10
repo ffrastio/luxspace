@@ -91,6 +91,14 @@ module.exports = {
           },
         },
         {
+          from: path.resolve(environment.paths.source, "images", "desaign"),
+          to: path.resolve(environment.paths.output, "images", "desaign"),
+          toType: "dir",
+          globOptions: {
+            ignore: ["*.DS_Store", "Thumbs.db"],
+          },
+        },
+        {
           from: path.resolve(environment.paths.source, "css"),
           to: path.resolve(environment.paths.output, "css"),
           toType: "dir",
